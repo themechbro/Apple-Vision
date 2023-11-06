@@ -594,14 +594,89 @@ max-height: 100vw;
     background-color: #000;
 }
 #page23>img{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     object-fit: cover;
     opacity:0
 }
+#page24{
+width :100vw;
+height: 100vh;
+position: relative;
+background-color:#d2d2d7;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+#footer-content{
+position: absolute;
+height:100%;
+width: 50%;
+background-color: #d2d2d7;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+#writings{
+padding: 30px 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
+}
+#writings>p{
+font-size: smaller;
+color: #4d4d4d;
+}
+hr{
+color:#4d4d4d
+}
 
+#links{
+display: flex;
+flex-direction: row;
+padding: 30px 40px;
+justify-content: space-around;
 
+}
+#sub-links>h6, #sub-links>ul>li{
+color: #4d4d4d;
+}
+#sub-links>h6{
+padding-bottom: 2vh;
+}
+#sub-links>ul>li{
+list-style: none;
+padding: 1% 0%;
+transition: all 01s ease-in;
+}
+
+#sub-links>ul>li:hover{
+text-decoration: underline;
+transition: all 01s ease-in;
+}
+#footer-end{
+display: flex;
+flex-direction: column;
+padding: 30px 40px;
+align-items: stretch;
+justify-content:space-between ;
+}
+#two{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+#footer-end>#two>p,#footer-end>#two>ul{
+font-size: x-small;
+color: #4d4d4d;
+}
+
+#two>ul>li{
+list-style: none;
+display: inline-block;
+padding: 0% 2%;
+}
 
 
 @media(max-width:762px){
@@ -630,11 +705,59 @@ justify-content: space-between;
 width:90%;
 height:45%;
 }
-#page18>canvas{
-width: 100%;
-height: 100%;
-}
 #center-page18{
 display: none;
 }
+#footer-content{
+height: 100%;
+width:100%;
+}
+#writings>p{
+font-size: 1vh;
+}
+#links{
+flex-direction: column;
+}
+
+#footer-end{
+display: none;
+}
+video{
+object-fit: contain;
+}
+#center-page20{
+   display: none;
+}
+#page18{
+position: relative;
+height: 100vh;
+width: 100vw;
+top: 0%;
+}
+#page18>canvas{
+position: relative;
+max-width: 100vw;
+max-height: 100vh;
+}
+}
+
+@media(max-width:930px){
+#footer-content{
+height: 100%;
+width:100%;
+}
+video{
+object-fit: cover;
+}
+#writings>p{
+font-size: 1vh;
+}
+#links{
+flex-direction: column;
+}
+
+#footer-end{
+display: none;
+}
+
 }
