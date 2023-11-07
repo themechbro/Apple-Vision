@@ -536,3 +536,8 @@ gsap.to("#page23>img",{
   },
   opacity:1
 })
+
+gsap.to(['#writings','#links','#footer-contents'],{scrollTrigger:{
+trigger:'footer'
+},y:'-20px',ease:"sine.out", stagger:1, duration:1
+})

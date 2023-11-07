@@ -635,8 +635,7 @@ color:#4d4d4d
 #links{
 display: flex;
 flex-direction: row;
-padding: 30px 40px;
-justify-content: space-around;
+justify-content: space-between;
 
 }
 #sub-links>h6, #sub-links>ul>li{
@@ -658,14 +657,13 @@ transition: all 01s ease-in;
 #footer-end{
 display: flex;
 flex-direction: column;
-padding: 30px 40px;
-align-items: stretch;
 justify-content:space-between ;
+width: 100%;
 }
 #two{
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: space-between;
 }
 #footer-end>#two>p,#footer-end>#two>ul{
 font-size: x-small;
